@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="head">
+        <div class="container">
+            
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+            
+        </div>
+
+    </div>
+</header>
+        <div class="welcome">
+            <p id="typing-text" style="width: 100%; margin-left: 25%; color: red;
+            font-style: italic;
+             font-size: 30px; font-weight: bold; font-family:Verdana, Geneva, Tahoma, sans-serif">
+               
+            </p>
+
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="profile-image">
+                <img src="images/personal.jpg" alt="Profile Image">
+            </div>
+            <div class="intro">
+                <h1>He<span>llo</span>, I a<span>m</span> Sa<span>roj</span> Pra<span>sad</span> G<span>auta</span>m</h1>
+                <p>
+                    An enthusiastic IT student with a keen interest in technology and innovation. Currently pursuing my degree in BCA, I am building a strong foundation in areas such as programming, network management, and cybersecurity. I have developed my skills through hands-on experience and continuous learning. My portfolio reflects my academic projects, hands-on experience, and growing expertise in the field. I am eager to learn and collaborate on exciting projects that challenge my skills and expand my knowledge. I thrive on creating efficient and secure IT environments, ensuring smooth operations, and implementing innovative solutions and technological advancements. Explore my journey, see my work, and join me as I venture into the dynamic world of IT. Let's connect and collaborate on future innovations to create something amazing together.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="portfolio-items">
+                <!-- Portfolio items -->
+                <div class="item">
+                    <img src="images/gym.png" alt="Gym Management System">
+                    <h3>Gym Management System</h3>
+                    <p>Description:The Gym Management System is a PHP-based solution that addresses the  needs of modern fitness centers. By integrating essential functionalities into a single platform, it enhances operational efficiency, improves member engagement, and supports the overall growth and success of the gym.</p>
+                </div>
+                <div class="item">
+                    <img src="images/ecom.png" alt="Ecommerce Website">
+                    <h3>Ecommerce Website</h3>
+                    <p>Description:The eCommerce Platform is a comprehensive online store built using Python and the Django framework. This system provides a robust and scalable solution for managing online sales, products, and customer interactions. It is designed to offer essential eCommerce functionalities with a focus on user experience, security, and efficiency</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="contact_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/yourprofile" class="text-dark m-2" target="_blank">
+                    <i class="fab fa-facebook fa-2x" style="color: #1877F2;"></i>
+                </a>
+                <a href="https://www.twitter.com/yourprofile" class="text-dark m-2" target="_blank">
+                    <i class="fab fa-twitter fa-2x"style="color: #1DA1F2;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile" class="text-dark m-2" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"style=" color: #0077B5;"></i>
+                </a>
+                <a href="https://www.instagram.com/yourprofile" class="text-dark m-2" target="_blank">
+                    <i class="fab fa-instagram fa-2x"style="color:#E1306C;"></i>
+                    <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+                        <i class="fab fa-github fa-2x" style="color: #000000;"></i>
+                    </a>
+                </a>
+                <a href="mailto:youremail@example.com" class="text-dark m-2">
+                    <i class="fas fa-envelope fa-2x"  style="color:#D14836"></i>
+                </a>
+            </div>
+            <p>&copy; 2024@SPG, All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

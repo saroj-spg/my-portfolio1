@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    background:  linear-gradient(to right, #f6d365, #fda085); ;
+}
+
+p {
+    text-align: center;
+    text-align: justify;
+}
+   
+span{
+    color:blue
+}
+
+.container {
+    width: 90%;
+    margin:auto
+}
+
+header {
+    background-color: #ff6767;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head .container{
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo image */
+.logo img {
+    width: 50px; /* Default size */
+    height: 50px; /* Default size */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    border-radius: 50%; /* Optional: Makes the logo circular */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for logo */
+.logo img:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+}
+
+nav {
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-top: 0px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 40px;
+   
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+}
+#typing-text {
+    display: inline;
+    overflow: hidden; /* Ensures content is hidden until it appears */
+    white-space: nowrap; /* Prevents text from wrapping */
+    border-right: 2px solid #000; /* Creates a cursor effect */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    font-size: 2em; /* Adjust as needed */
+    color: #000; /* Change to desired text color */
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 40ch; } /* Adjust to fit your text length */
+}
+
+/* Blinking Cursor Animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin-bottom: 20px;
+}
+
+/* Hover Effect for Profile Image */
+.profile-image img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+   
+}
+
+.portfolio-items .item {
+    margin: 10px;
+    width:100%;
+    max-width:500px;
+    height: auto;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow:hidden;
+    background-color:#ff6767;
+    font-style: italic;
+}
+
+.portfolio-items .item img {
+ 
+    width: 200px;
+    height: auto;
+  
+    border-radius: 40%; 
+    border-bottom: 1px solid #ddd;
+}
+
+.portfolio-items .item h3 {
+    margin: 10px 0 5px;
+}
+
+.portfolio-items .item p {
+    margin: 0;
+    width: 100%;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display:flex;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-links i {
+    font-size: 24px;
+}
+footer .social-links :hover{
+    color:mediumblue;
+   
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .portfolio-items .item {
+        width: 100%;
+        height: auto;
+    }
+}
